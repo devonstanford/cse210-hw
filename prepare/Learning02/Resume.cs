@@ -4,7 +4,7 @@ public class Resume
 {
     public string Name { get; set; }
 
-    public List<Job> Jobs { get; set; }
+    public List<Job> Jobs = new List<Job>();
 
     public Resume()
     {
@@ -13,7 +13,7 @@ public class Resume
     public void Display()
     {
         Console.WriteLine($"Name: {Name}");
-        Console.WriteLine("Jobs:");
+        Console.WriteLine("Work Experience:");
 
         foreach (Job job in Jobs)
         {
